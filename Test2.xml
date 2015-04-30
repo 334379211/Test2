@@ -28,7 +28,16 @@
                               </block>
                             </value>
                             <next>
-                              <block type="movement_forward" id="221"></block>
+                              <block type="movement_forward" id="221">
+                                <next>
+                                  <block type="controls_whileUntil" id="403" inline="false">
+                                    <field name="MODE">UNTIL</field>
+                                    <statement name="DO">
+                                      <block type="movement_stutter" id="440"></block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
