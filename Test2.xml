@@ -34,25 +34,7 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_forward" id="221">
-                                    <next>
-                                      <block type="controls_whileUntil" id="289" inline="false">
-                                        <field name="MODE">WHILE</field>
-                                        <statement name="DO">
-                                          <block type="multimedia_doupdate" id="300"></block>
-                                        </statement>
-                                        <next>
-                                          <block type="robot_delay" id="238" inline="true">
-                                            <value name="DELAY">
-                                              <block type="math_number" id="245">
-                                                <field name="NUM">500</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
+                                  <block type="movement_forward" id="221"></block>
                                 </next>
                               </block>
                             </next>
