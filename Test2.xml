@@ -1,55 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="10" x="114" y="17">
-    <next>
-      <block type="movement_reverse" id="123">
-        <next>
-          <block type="robot_delay" id="125" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="152">
-                <field name="NUM">500</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_forward" id="145">
-                <next>
-                  <block type="robot_delay" id="184" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="191">
-                        <field name="NUM">600</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_right" id="210">
-                        <next>
-                          <block type="robot_delay" id="223" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="236">
-                                <field name="NUM">500</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="movement_forward" id="221">
-                                <next>
-                                  <block type="controls_whileUntil" id="403" inline="false">
-                                    <field name="MODE">UNTIL</field>
-                                    <statement name="DO">
-                                      <block type="movement_stutter" id="440"></block>
-                                    </statement>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
+  <block type="controls_whileUntil" id="464" inline="false" x="90" y="50">
+    <field name="MODE">UNTIL</field>
+    <statement name="DO">
+      <block type="movement_stutter" id="497"></block>
+    </statement>
   </block>
 </xml>
