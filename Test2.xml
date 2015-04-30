@@ -1,14 +1,25 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="508" x="62" y="17">
     <next>
-      <block type="robot_delay" id="519" inline="true">
-        <value name="DELAY">
-          <block type="sensor_button" id="536">
-            <field name="OBJECT">UP</field>
-          </block>
-        </value>
+      <block type="movement_reverse" id="547">
         <next>
-          <block type="movement_forward" id="529"></block>
+          <block type="movement_forward" id="557">
+            <next>
+              <block type="movement_reverse" id="568">
+                <next>
+                  <block type="movement_forward" id="578">
+                    <next>
+                      <block type="movement_reverse" id="588">
+                        <next>
+                          <block type="movement_forward" id="598"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
